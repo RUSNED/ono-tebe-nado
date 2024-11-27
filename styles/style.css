@@ -125,7 +125,7 @@
   width: 256px;
   min-height: 51px;
   border: 1px solid white;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   line-height: 25.83px;
   text-align: center;
@@ -152,11 +152,13 @@
   list-style: none;
   justify-content: space-between;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
-  min-width: 334px;
   min-height: 563px;
+  flex-basis: 334px;
+  flex-grow: 1;
 }
 
 .card-link {
@@ -171,7 +173,6 @@
   padding: 51px 40px 48px 40px;
   height: 100%;
   background: center/cover; 
-  background-size: cover; 
   position: relative; 
   z-index: 1; 
 }
